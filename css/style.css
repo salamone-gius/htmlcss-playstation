@@ -1,4 +1,60 @@
-/* ---------- DEBUG ---------- */
-* {
+/* ----------- DEBUG ----------- */
+/* * {
     border: 1px solid red;
+} */
+
+/* ----------- COMMONS ----------- */
+header .row.bottom li a {
+    color: black;
 }
+
+button {
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* ----------- HEADER ----------- */
+header .row.top, header button {
+    background-color: black;
+}
+
+header .row.top img {
+    width: 80px;
+    padding: 10px 0;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+header .row.bottom ul.navbar-nav > li {
+    position: relative;
+    margin: 0 14px;
+}
+
+header .row.bottom ul.navbar-nav > li::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 15px;
+    right: -4px;
+    cursor: pointer;
+    font-size: 10px;
+    color: gray;
+}
+
+header .row.bottom img.search {
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .row.bottom button.log-in {
+    align-self: center;
+    margin-left: 15px;
+}
+
+ #navbarDropdown {
+     color: black;
+ }

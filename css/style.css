@@ -187,6 +187,28 @@ main .ps4 .accessories-card img {
     width: 100%;
 }
 
+/* ---------- PS-PLUS ---------- */
+main .ps-plus {
+    background-color: rgb(190, 190, 190);
+}
+
+main .ps-plus img.logo {
+    width: 60%;
+}
+
+main .ps-plus img.featured {
+    width: 100%;
+}
+
+main .ps-plus button {
+    background-color: rgb(220, 220, 220);
+    color: rgb(0, 114, 206);
+}
+
+
+
+
+
 
 
 
@@ -210,6 +232,9 @@ main .ps4 .accessories-card img {
         margin-bottom: 70px;
     }
     
+    main .ps-plus .hide {
+        display: none;
+    }   
 }
 
 @media screen and (max-width: 576px) {

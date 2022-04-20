@@ -29,11 +29,16 @@ button, .brd-rds {
     color: rgb(114, 114, 114);
 }
 
-/* -------------- HEADER -------------- */
-header .row.top, header button {
+header .row.top, header button, main .new-releases {
     background-color: black;
 }
 
+main i.fa-solid.fa-trademark{
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+/* -------------- HEADER -------------- */
 header .row.bottom {
     background-color: white;
 }
@@ -152,11 +157,6 @@ main .ps5 .accessories-card img {
     width: 100%;
 }
 
-main .ps5 .accessories-card i {
-    font-size: 10px;
-    vertical-align: text-top;
-}
-
 /* -------- IT-TAKES-TWO -------- */
 main .it-takes-two .hero-container {
     overflow: hidden;
@@ -167,8 +167,20 @@ main .it-takes-two .hero-container img.hero-logo {
     max-width: 140px;
 }
 
+/* -------- NEW-RELEASES -------- */
+main .new-releases {
+    color: white;
+    padding: 20px 0;
+}
 
+main .new-releases .games-card img {
+    width: 100%;
+}
 
+main .new-releases .games-card {
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 
 

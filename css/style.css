@@ -14,6 +14,9 @@ button {
     border: none;
 }
 
+button:active {
+    transform: scale(0.95);
+}
 .blue-btn {
     background-color: rgb(45, 100, 230);
 }
@@ -85,11 +88,11 @@ main .hero-container {
     position: relative;
 }
 
- main .hero img.hero-img {
+main .hero-container img.hero-img {
     width: 100%;
 }
 
-main .hero div.hero-card {
+main .hero-container div.hero-card {
     position: absolute;
     bottom: 20px;
     left: 3%;
@@ -97,11 +100,11 @@ main .hero div.hero-card {
     color: white;
 }
 
-main .hero img.hero-logo {
+main .hero-container img.hero-logo {
     max-width: 270px;
 }
 
-main .hero button.hero-btn {
+main .hero-container button.hero-btn {
     background-color: rgb(205, 61, 15);
 }
 
@@ -154,18 +157,37 @@ main .ps5 .accessories-card i {
     vertical-align: text-top;
 }
 
+/* -------- IT-TAKES-TWO -------- */
+main .it-takes-two .hero-container {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+main .it-takes-two .hero-container img.hero-logo {
+    max-width: 140px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* -------------- RESPONSIVE -------------- */
 @media screen and (max-width: 767px) {
-    main .hero div.hero-card {
+    main .hero-container div.hero-card {
         font-size: 14px;
     }
     
-    main .hero div.hero-card h1 {
+    main .hero-container div.hero-card h1 {
         font-size: 22px;
     }  
 
-    main .hero img.hero-logo {
+    main .hero-container img.hero-logo {
         max-width: 170px;
     }
 
@@ -176,11 +198,11 @@ main .ps5 .accessories-card i {
 }
 
 @media screen and (max-width: 576px) {
-    main .hero div.hero-card {
+    main .hero-container div.hero-card {
         font-size: 12px;
     }
 
-    main .hero div.hero-card h1 {
+    main .hero-container div.hero-card h1 {
         font-size: 20px;
     }
 

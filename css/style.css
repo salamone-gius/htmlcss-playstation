@@ -1,22 +1,29 @@
-/* ----------- DEBUG ----------- */
+/* --------------- DEBUG --------------- */
 /* * {
     border: 1px solid red;
 } */
 
-/* ----------- COMMONS ----------- */
+/* -------------- COMMONS -------------- */
 header .row.bottom li a {
     color: black;
 }
 
 button {
     color: white;
-    border-radius: 20px;
     padding: 5px 15px;
 }
 
-/* ----------- HEADER ----------- */
+button, .brd-rds {
+    border-radius: 20px;
+}
+
+/* -------------- HEADER -------------- */
 header .row.top, header button {
     background-color: black;
+}
+
+header .row.bottom {
+    background-color: white;
 }
 
 header .row.top img {
@@ -58,3 +65,74 @@ header .row.bottom button.log-in {
  #navbarDropdown {
      color: black;
  }
+
+/* -------------- MAIN -------------- */
+/* --------- HERO --------- */
+main {
+    padding-top: 110px;
+}
+
+main .hero-container {
+    position: relative;
+}
+
+ main .hero img.hero-img {
+    width: 100%;
+}
+
+main .hero div.hero-card {
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
+    max-width: 95%;
+    color: white;
+}
+
+main .hero img.hero-logo {
+    max-width: 270px;
+}
+
+main .hero button.hero-btn {
+    background-color: rgb(205, 61, 15);
+}
+
+main .hero .hero-thumbnails {
+    margin: 20px 0;
+    text-align: center;
+}
+
+main .hero .hero-thumbnails img {
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+main .hero .hero-thumbnails img:hover {
+    border: 2px solid rgb(0, 114, 206);
+}
+
+/* -------------- RESPONSIVE -------------- */
+@media screen and (max-width: 767px) {
+    main .hero div.hero-card {
+        font-size: 14px;
+    }
+    
+    main .hero div.hero-card h1 {
+        font-size: 22px;
+    }  
+
+    main .hero img.hero-logo {
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main .hero div.hero-card {
+        font-size: 12px;
+    }
+
+    main .hero div.hero-card h1 {
+        font-size: 20px;
+    }
+
+}

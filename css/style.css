@@ -33,9 +33,9 @@ header .row.top, header button, main .new-releases {
     background-color: black;
 }
 
-main i.fa-solid.fa-trademark{
+main i {
     font-size: 10px;
-    vertical-align: text-top;
+    vertical-align: super;
 }
 
 /* -------------- HEADER -------------- */
@@ -182,7 +182,10 @@ main .new-releases .games-card {
     margin-top: 20px;
 }
 
-
+/* ---------- PS4 ---------- */
+main .ps4 .accessories-card img {
+    width: 100%;
+}
 
 
 

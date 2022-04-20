@@ -11,10 +11,19 @@ header .row.bottom li a {
 button {
     color: white;
     padding: 5px 15px;
+    border: none;
+}
+
+.blue-btn {
+    background-color: rgb(45, 100, 230);
 }
 
 button, .brd-rds {
     border-radius: 20px;
+}
+
+.grey-txt {
+    color: rgb(114, 114, 114);
 }
 
 /* -------------- HEADER -------------- */
@@ -111,6 +120,41 @@ main .hero .hero-thumbnails img:hover {
     border: 2px solid rgb(0, 114, 206);
 }
 
+/* ---------- PS5 ---------- */
+main .ps5 .col-12.text-center.mt-5 h6 {
+    color: rgb(0, 114, 206);
+}
+
+main .ps5 .col-12.text-center.mt-5 p {
+    margin-top: 30px;
+}
+
+main .ps5 .col-12.col-md-6 img {
+    width: 100%;
+}
+
+main .ps5 .accessories-card {
+    opacity: 0.6;
+    padding-top: 30px;
+    cursor: pointer;
+    height: 100%;
+}
+
+main .ps5 .accessories-card:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgb(0, 114, 206);
+}
+
+main .ps5 .accessories-card img {
+    width: 100%;
+}
+
+main .ps5 .accessories-card i {
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+
 /* -------------- RESPONSIVE -------------- */
 @media screen and (max-width: 767px) {
     main .hero div.hero-card {
@@ -124,6 +168,11 @@ main .hero .hero-thumbnails img:hover {
     main .hero img.hero-logo {
         max-width: 170px;
     }
+
+    main .ps5 .col-12.text-center.mt-5 p {
+        margin-bottom: 70px;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {

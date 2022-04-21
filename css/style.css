@@ -80,10 +80,14 @@ header .row.bottom ul.navbar-nav > li::after {
     font-family: FontAwesome;
     position: absolute;
     top: 12px;
-    right: -4px;
+    right: -6px;
     cursor: pointer;
     font-size: 10px;
     color: gray;
+}
+
+header .row.bottom ul.navbar-nav > li:hover li::after {
+    color: rgb(0, 114, 206);
 }
 
 header .row.bottom img.search {
@@ -324,10 +328,6 @@ footer, .footer a {
 .footer.bottom img, .footer.top img.ps-logo, .footer.top img.globe {
     margin: 20px 0;
 }
-
-
-
-
 
 /* -------------- RESPONSIVE -------------- */
 @media screen and (min-width: 992px) {

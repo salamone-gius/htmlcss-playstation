@@ -263,6 +263,11 @@ main .ps-now button:hover {
     outline: 2px solid rgb(245, 245, 245);
 }
 
+/* ---------- ON-SALE ---------- */
+main .social .social-card img {
+    width: 100%;
+    cursor: pointer;
+}
 
 
 

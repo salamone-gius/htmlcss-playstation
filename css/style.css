@@ -1,7 +1,7 @@
 /* --------------- DEBUG --------------- */
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 /* -------------- COMMONS -------------- */
 button {
@@ -43,7 +43,7 @@ button, .brd-rds {
     color: rgb(114, 114, 114);
 }
 
-header .row.top, header button, main .new-releases {
+header .row.top, header button {
     background-color: black;
 }
 
@@ -193,6 +193,7 @@ main .it-takes-two .hero-container img.hero-logo {
 
 /* -------- NEW-RELEASES -------- */
 main .new-releases {
+    background-color: rgb(31, 31, 31);
     color: white;
     padding: 20px 0;
 }
@@ -236,8 +237,31 @@ main .ps-plus button:hover {
 /* ---------- ON-SALE ---------- */
 main .on-sale .sale-card img {
     width: 100%;
+    cursor: pointer;
 }
 
+/* ---------- PS-NOW ---------- */
+main .ps-now {
+    background-color: rgb(22, 28, 59);
+    color: white;
+}
+
+main .ps-now img.logo {
+    width: 60%;
+}
+
+main .ps-now img.featured {
+    width: 100%;
+}
+
+main .ps-now button {
+    background-color: rgb(245, 245, 245);
+    color: rgb(33, 33, 33);
+}
+
+main .ps-now button:hover {
+    outline: 2px solid rgb(245, 245, 245);
+}
 
 
 

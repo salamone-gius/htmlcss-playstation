@@ -4,21 +4,35 @@
 } */
 
 /* -------------- COMMONS -------------- */
-header .row.bottom li a {
-    color: black;
-}
-
 button {
     color: white;
+    font-weight: 700;
     padding: 5px 15px;
-    border: none;
+    border: 2px solid transparent;
+}
+
+button:hover {
+    outline-offset: 2px;
 }
 
 button:active {
     transform: scale(0.95);
 }
+
 .blue-btn {
     background-color: rgb(45, 100, 230);
+}
+
+.blue-btn:hover {
+    outline: 2px solid rgb(45, 100, 230);
+}
+
+.orange-btn {
+    background-color: rgb(205, 61, 15);
+}
+
+.orange-btn:hover {
+    outline: 2px solid rgb(205, 61, 15);
 }
 
 button, .brd-rds {
@@ -79,9 +93,19 @@ header .row.bottom button.log-in {
     margin-left: 15px;
 }
 
+header button:hover {
+    outline: 2px solid black;
+}
+
  #navbarDropdown {
      color: black;
+     font-weight: 500;
  }
+
+ #navbarDropdown:hover {
+    color: gray;
+}
+
 
 /* -------------- MAIN -------------- */
 /* --------- HERO --------- */
@@ -109,12 +133,8 @@ main .hero-container img.hero-logo {
     max-width: 270px;
 }
 
-main .hero-container button.hero-btn {
-    background-color: rgb(205, 61, 15);
-}
-
 main .hero .hero-thumbnails {
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
@@ -122,10 +142,13 @@ main .hero .hero-thumbnails img {
     width: 100%;
     cursor: pointer;
     padding: 5px;
+    border: 2px solid transparent;
+    transition: transform 1s;
 }
 
 main .hero .hero-thumbnails img:hover {
     border: 2px solid rgb(0, 114, 206);
+    transform: translateY(-20px);
 }
 
 /* ---------- PS5 ---------- */
@@ -146,6 +169,7 @@ main .ps5 .accessories-card {
     padding-top: 30px;
     cursor: pointer;
     height: 100%;
+    border-bottom: 2px solid transparent;
 }
 
 main .ps5 .accessories-card:hover {
@@ -205,8 +229,9 @@ main .ps-plus button {
     color: rgb(0, 114, 206);
 }
 
-
-
+main .ps-plus button:hover {
+    outline: 2px solid rgb(200, 200, 200);
+}
 
 
 
@@ -232,12 +257,12 @@ main .ps-plus button {
         margin-bottom: 70px;
     }
     
-    main .ps-plus .hide {
+    main .hide {
         display: none;
     }   
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     main .hero-container div.hero-card {
         font-size: 12px;
     }

@@ -1,7 +1,7 @@
 /* --------------- DEBUG --------------- */
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 /* -------------- COMMONS -------------- */
 button {
@@ -233,7 +233,10 @@ main .ps-plus button:hover {
     outline: 2px solid rgb(200, 200, 200);
 }
 
-
+/* ---------- ON-SALE ---------- */
+main .on-sale .sale-card img {
+    width: 100%;
+}
 
 
 

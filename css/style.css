@@ -277,14 +277,51 @@ main .social .social-card img {
 }
 
 /* ---------------- FOOTER ---------------- */
-footer, .footer.bottom a {
+footer, .footer a {
     background-color: rgb(0, 67, 156);
     color: white;
     font-size: 14px;
 }
 
+.footer {
+    padding: 20px 0;
+}
+
+.footer.top img.globe {
+    width:15px;
+}
+
+.footer.top img.ps-logo {
+    width:100px;
+}
+
+.footer.top ul{
+    list-style: none;
+}
+
+.footer.top li{
+    padding: 5px 0;
+}
+
+.footer.top a{
+    text-decoration: none;
+}
+
+.footer.top a:hover{
+    text-decoration: underline;
+}
+
+.footer.top .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .footer.bottom img {
     width: 150px;
+}
+
+.footer.bottom img, .footer.top img.ps-logo, .footer.top img.globe {
     margin: 20px 0;
 }
 
@@ -304,6 +341,10 @@ footer, .footer.bottom a {
 }
 
 @media screen and (max-width: 767px) {
+    .footer.top .footer-nav {
+        flex-direction: column;
+    }
+    
     main .hero-container div.hero-card {
         font-size: 14px;
     }

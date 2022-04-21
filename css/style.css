@@ -79,7 +79,7 @@ header .row.bottom ul.navbar-nav > li::after {
     content: "\f078";
     font-family: FontAwesome;
     position: absolute;
-    top: 15px;
+    top: 12px;
     right: -4px;
     cursor: pointer;
     font-size: 10px;
@@ -110,6 +110,9 @@ header button:hover {
     color: gray;
 }
 
+#img-search {
+    display: none;
+}
 
 /* -------------- MAIN -------------- */
 /* --------- HERO --------- */
@@ -290,6 +293,16 @@ footer, .footer.bottom a {
 
 
 /* -------------- RESPONSIVE -------------- */
+@media screen and (min-width: 992px) {
+    #li-my-playstation {
+        margin-inline-start: auto;
+    }
+
+    #img-search {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 767px) {
     main .hero-container div.hero-card {
         font-size: 14px;
